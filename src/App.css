@@ -3,3 +3,13 @@
     
     width: 100%;
 }
+.datepick{
+    border: 3px solid white;
+}
+iframe{
+    width: auto;
+    height: 100%;
+}
+.heading{
+    text-align: center;
+}

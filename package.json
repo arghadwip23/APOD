@@ -1,7 +1,7 @@
 {
   "name": "trailapp",
   "version": "0.1.0",
-  "homepage":"https://arghadwip23.github.io/APOD",
+  "homepage": "https://arghadwip23.github.io/APOD",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -9,17 +9,19 @@
     "@fontsource/roboto": "^5.0.13",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
+    "@mui/x-date-pickers": "^7.12.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dayjs": "^1.11.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
