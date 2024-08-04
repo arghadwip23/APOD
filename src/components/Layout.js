@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Layout(props) {
  if (props.type==="video") {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={2}>
       
       <Grid item xs={12} md={12} xl={12} lg={12}>
@@ -37,12 +37,12 @@ export default function Layout(props) {
       <Grid container spacing={2}>
       
       <Grid item xs={12} md={12} xl={12} lg={12} className='heading'>
-        <h1>{props.title}</h1><p>-by{props.author}</p>
+        <h1>{props.title}</h1><p>-by {props.author}</p>
         </Grid>
         <Grid item xs={12} md={6}>  
          <img src={props.url} className='heroimg' width={400} alt=""/>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className='text'>
           <p>{props.txt}</p>
         </Grid>
        

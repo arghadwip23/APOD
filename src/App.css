@@ -1,5 +1,5 @@
 .heroimg{
-    object-fit: cover;
+   
     
     width: 100%;
 }
@@ -12,4 +12,14 @@ iframe{
 }
 .heading{
     text-align: center;
+}
+.text{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px !important;
+}
+.imgCont{
+ padding: 200px !important;
 }
