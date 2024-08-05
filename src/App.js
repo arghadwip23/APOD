@@ -2,12 +2,12 @@ import {React,useState,useEffect} from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import Layout from './components/Layout';
-
+import Todaydate from './components/Todaydate';
 
 
 function App() {
 let [phtos,setPhotos] = useState([]);
-let [calldate,setcalldate] = useState([ "2024-3-14"]);
+let [calldate,setcalldate] = useState([Todaydate()]);
 //let setdate = (dvalue)=>console.log(dvalue);
  useEffect(()=>{
   async function fetchData() {
@@ -30,7 +30,8 @@ let [calldate,setcalldate] = useState([ "2024-3-14"]);
    <Layout url={phtos.url} txt={phtos.explanation} title={phtos.title} type={phtos.media_type} authors={phtos.copyright} fnc={(dva)=>{
    let month = parseInt(dva.$M)+1;
    let newdate = dva.$y+"-"+month+"-"+dva.$D ;
-    alert(newdate);
+    //console.log(Todaydate());
+    
     console.log(dva);
     
     setcalldate(newdate);
