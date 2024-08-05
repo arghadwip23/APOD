@@ -15,7 +15,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import Datepicker from './Datepicker';
+
 
 
 export default function Nav(props) {
@@ -69,7 +69,7 @@ export default function Nav(props) {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             APOD
           </Typography>
-          <Datepicker fn={props.fnc}/>
+          
         </Toolbar>
       </AppBar>
       <Drawer open={open} onClose={toggleDrawer(false)}>{DrawerList}</Drawer>

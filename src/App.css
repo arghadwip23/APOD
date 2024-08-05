@@ -1,25 +1,37 @@
 .heroimg{
-   
-    
-    width: 100%;
-}
-.datepick{
-    border: 3px solid white;
-}
+   border: 1px solid black;
+    }
+
 iframe{
     width: auto;
     height: 100%;
 }
 .heading{
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .text{
-    border: 2px solid black;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px !important;
+    
 }
 .imgCont{
- padding: 200px !important;
+ padding: 2px;
+ display: flex;
+ 
+ align-items: center;
+ justify-content: center;
+
+}
+.header{
+    text-align: center;
+}
+.datecontainer{  
+ display: inline-block;
+ height: 100%;
+ padding: 0;
 }

@@ -26,12 +26,16 @@ let [calldate,setcalldate] = useState([ "2024-3-14"]);
 
   return (
   <>
-  <Nav fnc={(dva)=>{
-    let newdate = dva.$y+"-"+dva.$M+"-"+dva.$D ;
+  <Nav />
+   <Layout url={phtos.url} txt={phtos.explanation} title={phtos.title} type={phtos.media_type} authors={phtos.copyright} fnc={(dva)=>{
+   let month = parseInt(dva.$M)+1;
+   let newdate = dva.$y+"-"+month+"-"+dva.$D ;
+    alert(newdate);
+    console.log(dva);
+    
     setcalldate(newdate);
     
   }}/>
-   <Layout url={phtos.url} txt={phtos.explanation} title={phtos.title} type={phtos.media_type} author={phtos.copyright}/>
   </>
   );
 }
